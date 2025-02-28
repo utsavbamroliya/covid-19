@@ -1,0 +1,110 @@
+/* Base styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Heading */
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #2c3e50;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #2980b9;
+}
+
+/* Search button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1f618d;
+}
+
+.error{
+    color: red;
+    margin-top: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.err{
+    display: none;
+}
+
+.data-container {
+    margin-top: 20px;
+}
+
+.data-container p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+}
+
+.data-container span {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+/* Mobile optimization */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input[type="text"], button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .data-container p {
+        font-size: 1rem;
+    }
+}

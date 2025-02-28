@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COVID Data</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>COVID DATA</h1>
+
+        <input type="text" name="stateName" id="state" placeholder="Search state here" />
+        <button type="submit" id="search">Search</button>
+        <p class="error err" id="myp">*state not found...!!</p>
+
+        <div class="data-container">
+            <h2 id="stateName"></h2>
+            <p>Active cases: <span class="active">0</span></p>
+            <p>Confirmed cases: <span class="confirmed">0</span></p>
+            <p>Deaths: <span class="deaths">0</span></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
